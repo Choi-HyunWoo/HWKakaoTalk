@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HWKakaoTalk</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_friend">이름(초성), 전화번호 검색</string>
+    <string name="search_chatlist">채팅방 이름, 참여자 검색</string>
+</resources>
