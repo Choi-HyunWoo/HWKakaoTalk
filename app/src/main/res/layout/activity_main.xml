@@ -8,15 +8,19 @@
     <TabHost
         android:id="@android:id/tabhost"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F2F2F5">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#F2F2F5"
             android:orientation="vertical">
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:showDividers="none"
+                android:background="#F2F2F5" >
             </TabWidget>
 
             <FrameLayout
