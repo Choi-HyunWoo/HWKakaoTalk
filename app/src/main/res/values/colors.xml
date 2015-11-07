@@ -8,4 +8,6 @@
     <color name="kakaoPrimaryDark">#000000</color>
     <color name="kakaoAccent">#493434</color>
 
+    <color name="kakaoYellow">#FFED00</color>
+    <color name="kakaoWhite">#FFFFFF</color>
 </resources>

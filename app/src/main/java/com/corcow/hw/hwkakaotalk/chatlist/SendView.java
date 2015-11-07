@@ -5,6 +5,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.corcow.hw.hwkakaotalk.R;
+import com.corcow.hw.hwkakaotalk.chatlist.SendData;
 
 /**
  * Created by multimedia on 2015-10-11.

@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.corcow.hw.hwkakaotalk.R;
+import com.corcow.hw.hwkakaotalk.chatlist.ReceiveData;
 
 /**
  * Created by multimedia on 2015-10-11.

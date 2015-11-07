@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="30dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="#FFFFFF" >
+
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -17,6 +19,5 @@
         android:id="@+id/editText"
         android:hint="@string/search_friend"
         android:textSize="12dp"
-
         android:layout_weight="1" />
 </LinearLayout>

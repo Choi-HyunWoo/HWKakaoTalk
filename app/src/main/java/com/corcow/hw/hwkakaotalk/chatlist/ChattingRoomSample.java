@@ -19,7 +19,6 @@ public class ChattingRoomSample extends AppCompatActivity {
     ChattingRoomAdapter mAdapter;
     RadioGroup category;
     EditText messageView;
-    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

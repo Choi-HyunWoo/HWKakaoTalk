@@ -1,13 +1,17 @@
 package com.corcow.hw.hwkakaotalk.friendlist;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.Toast;
 
+import com.corcow.hw.hwkakaotalk.FriendsInfo;
 import com.corcow.hw.hwkakaotalk.R;
 
 
@@ -31,9 +35,23 @@ public class FriendsFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_friends, container, false);
         listView = (ExpandableListView) v.findViewById(R.id.expandableListView);
 
-        // headerview는 listview에 adapter를 할당하기 전에 설정 (검색창)
+        // headerview(검색창)는 listview에 adapter를 할당하기 전에 설정
         View headerView = inflater.inflate(R.layout.friends_header_layout, null);
         listView.addHeaderView(headerView, null, false);
+
+        // child clicked
+        listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                FriendsChildItem data = (FriendsChildItem) mAdapter.getChild(groupPosition, childPosition);
+                Intent intent = new Intent(getActivity(), FriendsInfo.class);
+                intent.putExtra("name", data.name);
+                intent.putExtra("img", data.profileImageResource);
+                startActivity(intent);
+
+                return false;
+            }
+        });
 
         // adapter 할당
         mAdapter = new FriendsAdapter();

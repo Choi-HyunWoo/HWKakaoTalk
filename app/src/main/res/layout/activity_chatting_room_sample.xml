@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:text="Send"
                 android:id="@+id/radio_send"
-                android:checked="false" />
+                android:checked="true" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
